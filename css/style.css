@@ -48,25 +48,6 @@ nav > li > a:active{
 }
 #home{
 	background-color:#FFFFFF;
-	margin-top:10px;
-}
-h1{   /*first heading in each page*/
-	font-family:'Playfair Display', 'Times';
-	color:#000000;
-	font-weight:100;
-	text-align:left;
-	font-size:60px;
-	padding-top:10%;
-	padding-left:5%;
-	padding-right:5%;
-	padding-bottom:5%;
-	display:inline;
-	float:left;
-	width:auto;
-}
-h1:after{
-	clear:both;
-	display:inline-block;
 }
 .first{
 	text-align:center;
@@ -101,23 +82,6 @@ p{
 	background-color:#FFFFFF;
 	padding-left:5%;
 }
-#AboutMe, #education{
-	padding-left:5%;
-}
-#AboutMe p, #education p{
-	padding-left:50%;
-	padding-right:5%;
-	display:inline-block;
-}
-
-#AboutMe h2{
-	float:left;
-	clear:both;
-}
-#education li{
-	padding-left:50%;
-	padding-right:5%;
-}
 #gallery img{
 	max-width: 31%;
 	max-height:31%;
@@ -131,21 +95,33 @@ p{
 	background-color:#1D1D1D;
 	color:#FFFFFF;
 }
+h1{   /*first heading in each page*/
+	font-family:'Playfair Display', 'Times';
+	color:#000000;
+	font-weight:100;
+	float:left;
+	font-size:60px;
+	margin-top:10%;
+	margin-left:5%;
+	display:inline-block;
+}
 h2{   /*subheadings in AboutMe, Education*/
 	font-family:'Poppins','Arial';
 	color:#000000;
 	font-weight:600;
-	text-align:left;
 	font-size:30px;
-	padding-top:2%;
 	padding-right:5%;
-	padding-left:50%;
-	display:inline-block;
-	clear:both;
 }
-h1:after{
-	clear:both;
+#AboutMe, #education{
+	float:left;
+	margin-left:5%;
+	margin-top:10%;
+	margin-bottom:0;
 	display:inline-block;
+	text-align:left;
+}
+#education li{
+	padding-right:5%;
 }
 h3{   /*Let's Chats*/
 	font-family:'Playfair Display', 'Times';
@@ -181,7 +157,7 @@ h3{   /*Let's Chats*/
 #contact{
 	font-family:'Playfair Display', 'Times';
 	color:#000000;
-	padding-top:5%;
+	padding-top:15%;
 	text-align:left;
 	font-size:60px;
 	padding-left:5%;
@@ -190,6 +166,15 @@ h3{   /*Let's Chats*/
 	display:inline-block;
 	float:left;
 	max-width:40%;
+}
+#contact h1{
+	max-width:100%;
+}
+#titles{
+	margin-left:7%;
+	padding-top:9%;
+	float:left;
+	padding-right:20%;
 }
 #contact p{
 	float:left;
@@ -225,6 +210,7 @@ input, textarea{
 }
 hr{
 	margin-right:5%;
+	margin-left:5%;
 }
 footer{
 	display:block;
@@ -244,6 +230,7 @@ footer p{
 	font-family:'Arial';
 	font-size:13px;
 }
+/*
 #open-btn{
 	cursor:pointer;
 }
@@ -264,3 +251,4 @@ iframe{
 	float:right;
 	padding-right:3%;
 }
+*/
