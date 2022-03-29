@@ -21,6 +21,7 @@ nav{
 	color:#000000;
 	background-color:#FFFFFF;
 	position:fixed;
+	top:0;
  	width: 100%; 
 	list-style:none;
 	text-align:right;
@@ -46,9 +47,6 @@ nav > li > a:hover{
 nav > li > a:active{
 	color: #c1c1c1;
 }
-#home{
-	background-color:#FFFFFF;
-}
 .first{
 	text-align:center;
 	font-size:30px;
@@ -57,6 +55,8 @@ nav > li > a:active{
 img{
 	max-width:100%;
 	max-height:100%;
+	display:inline-block;
+	clear:both;
 }
 p{
 	font-family: 'Poppins', 'Arial';
@@ -67,6 +67,8 @@ p{
 }
 #resume{
 	padding-left:5%;
+	padding-top:1%;
+	padding-bottom:1%;
 	padding-right:50%;
 	font-family:'Playfair Display', 'Times';
 }
@@ -88,10 +90,10 @@ p{
 	padding-bottom:0.01%;
 }
 #bye{
-	padding-top:5%;
+	padding-top:4%;
 	padding-left:5%;
 	padding-right:50%;
-	padding-bottom:5%;
+	padding-bottom:4%;
 	background-color:#1D1D1D;
 	color:#FFFFFF;
 }
@@ -99,11 +101,13 @@ h1{   /*first heading in each page*/
 	font-family:'Playfair Display', 'Times';
 	color:#000000;
 	font-weight:100;
-	float:left;
 	font-size:60px;
-	margin-top:10%;
+}
+#home h1{
+	background-color:#FFFFFF;
+	margin-top:12%;
 	margin-left:5%;
-	display:inline-block;
+	margin-bottom:6%;
 }
 h2{   /*subheadings in AboutMe, Education*/
 	font-family:'Poppins','Arial';
@@ -112,13 +116,45 @@ h2{   /*subheadings in AboutMe, Education*/
 	font-size:30px;
 	padding-right:5%;
 }
-#AboutMe, #education{
-	float:left;
-	margin-left:5%;
+#flex-container{
+	display:flex;
+}
+#flex-container > div{
+	margin:15%;
+ 	max-width:100%;
+}
+#flex-container > section{
 	margin-top:10%;
-	margin-bottom:0;
-	display:inline-block;
-	text-align:left;
+	margin-left:3%;
+	margin-bottom:2%;
+}
+#flex-contact{
+	display:flex;
+}
+#flex-contact div{
+	margin-top:15%;
+	margin-left:10%;
+	width:60%;
+}
+#flex-contact form{
+	margin:5%;
+	margin-top:15%;
+	width:70%;
+	max-height:100%;
+	border-radius:5px;
+	padding:1.5%;
+	background-color:#f2f2f2;
+}
+input, textarea{
+	padding:2%;
+	width: 100%;
+	max-height:100%;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	margin-top: 6px;
+  	margin-bottom: 16px;
+  	font-family: 'Poppins', 'Arial';
 }
 #education li{
 	padding-right:5%;
@@ -153,60 +189,6 @@ h3{   /*Let's Chats*/
 .button:hover{
 	color:#FFFFFF;
 	background-color:#1D1D1D;
-}
-#contact{
-	font-family:'Playfair Display', 'Times';
-	color:#000000;
-	padding-top:15%;
-	text-align:left;
-	font-size:60px;
-	padding-left:5%;
-	padding-right:5%;
-	padding-bottom:5%;
-	display:inline-block;
-	float:left;
-	max-width:40%;
-}
-#contact h1{
-	max-width:100%;
-}
-#titles{
-	margin-left:7%;
-	padding-top:9%;
-	float:left;
-	padding-right:20%;
-}
-#contact p{
-	float:left;
-	text-align:left;
-	padding-left:5%;
-	padding-right:5%;
-	color:#000000;
-	display:inline-block;
-	max-width:50%;
-}
-.container{
-	border-radius: 5px;
-  	background-color: #f2f2f2;
-  	padding: 1.5%;
-	margin-right:5%;
-	margin-top:10%;
-	margin-bottom:5%;
-	width:40%;
-	max-height:40%;
-  	font-family: 'Poppins', 'Arial';
-  	display:inline-block;
-}
-input, textarea{
-	padding:2px;
-	width: 100%;
-  	padding: 12px;
-  	border: 1px solid #ccc;
-  	border-radius: 4px;
-  	box-sizing: border-box;
-  	margin-top: 6px;
-  	margin-bottom: 16px;
-  	font-family: 'Poppins', 'Arial';
 }
 hr{
 	margin-right:5%;
